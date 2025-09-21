@@ -20,10 +20,10 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore OrderSystem-csharp.sln
+      run: dotnet restore order-system-csharp/OrderSystem-csharp.sln
 
     - name: Build
-      run: dotnet build OrderSystem-csharp.sln --no-restore
+      run: dotnet build order-system-csharp/OrderSystem-csharp.sln --no-restore
 
     - name: Run tests
-      run: dotnet test OrderSystem-csharp.sln --no-build --verbosity normal
+      run: dotnet test order-system-csharp/OrderSystem-csharp.sln --no-build --verbosity normal
